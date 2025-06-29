@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel Recommendations</title>
+    <link rel="stylesheet" href="travel_recommendations.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <form method="get" class="nav-search">
+            <input type="text" placeholder="Enter destination" name="search">
+            <button type="submit" class="search-btn">Search</button>
+            <button type="reset" class="clear-btn">Clear</button>
+        </form>
+    </div>
+
+    <main id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">EXPLORE<br>DREAM<br>DESTINATION</h1>
+            <p class="hero-description">
+                It encourages exploration of unfamiliar territories, embracing diverse cultures and 
+                landscapes, while pursuing the desired destination that captivates the heart and 
+                ignites a sense of wonder.
+            </p>
+            <button class="book-btn">BOOK NOW</button>
+        </div>
+        <div class="social-links">
+            <a href="#" class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(9.84615,9.84615)"><path d="M25.85547,5.57422c-0.94141,0.41797 -1.95312,0.69922 -3.01562,0.82813c1.08203,-0.65234 1.91797,-1.67969 2.30859,-2.90625c-1.01562,0.60156 -2.14062,1.03906 -3.33594,1.27344c-0.95703,-1.01953 -2.32031,-1.65625 -3.83203,-1.65625c-2.89844,0 -5.25,2.35156 -5.25,5.25c0,0.41016 0.04688,0.8125 0.13672,1.19531c-4.36328,-0.21875 -8.23047,-2.3125 -10.82031,-5.48828c-0.45312,0.77734 -0.71094,1.67969 -0.71094,2.64453c0,1.82031 0.92578,3.42578 2.33594,4.36719c-0.86328,-0.02734 -1.67187,-0.26172 -2.37891,-0.65625c0,0.02344 0,0.04297 0,0.06641c0,2.54297 1.80859,4.66406 4.21094,5.14844c-0.44141,0.12109 -0.90234,0.18359 -1.38281,0.18359c-0.33984,0 -0.66797,-0.03125 -0.98828,-0.09375c0.66797,2.08203 2.60547,3.60547 4.90234,3.64453c-1.79297,1.41016 -4.05859,2.24609 -6.51953,2.24609c-0.42578,0 -0.83984,-0.02344 -1.25,-0.07031c2.32031,1.48828 5.08203,2.35547 8.04688,2.35547c9.65625,0 14.9375,-8 14.9375,-14.93359c0,-0.23047 -0.00391,-0.45703 -0.01562,-0.68359c1.02734,-0.73438 1.91797,-1.66016 2.62109,-2.71484"></path></g></g>
+                </svg>
+            </a>
+            <a href="#" class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z"></path></g></g>
+                </svg>
+            </a>
+            <a href="#" class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z"></path></g></g>
+                </svg>
+            </a>
+            <a href="#" class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M44.89844,14.5c-0.39844,-2.19922 -2.29687,-3.80078 -4.5,-4.30078c-3.29687,-0.69922 -9.39844,-1.19922 -16,-1.19922c-6.59766,0 -12.79687,0.5 -16.09766,1.19922c-2.19922,0.5 -4.10156,2 -4.5,4.30078c-0.40234,2.5 -0.80078,6 -0.80078,10.5c0,4.5 0.39844,8 0.89844,10.5c0.40234,2.19922 2.30078,3.80078 4.5,4.30078c3.5,0.69922 9.5,1.19922 16.10156,1.19922c6.60156,0 12.60156,-0.5 16.10156,-1.19922c2.19922,-0.5 4.09766,-2 4.5,-4.30078c0.39844,-2.5 0.89844,-6.10156 1,-10.5c-0.20312,-4.5 -0.70312,-8 -1.20312,-10.5zM19,32v-14l12.19922,7z"></path></g></g>
+                </svg>
+            </a>
+        </div>
+    </main>
+
+    <section id="about" class="about-section">
+        <div class="about-overlay">
+            <div class="about-content">
+                <h1 class="about-title">ABOUT US</h1>
+                <div class="about-description">
+                    <p>Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers. Our mission is to <strong>provide the best experience</strong> for people traveling to different destinations around the world.</p>
+                    <p>Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in <strong>putting our customers first</strong> and <strong>working together</strong> to achieve our goals.</p>
+                    <p>Feel free to explore our website to learn more about what we offer!</p>
+                </div>
+                <div class="team-section">
+                    <h2 class="team-title">Our Team</h2>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="member-icon">👤</div>
+                            <h3>John Doe</h3>
+                            <p class="member-description">John is responsible for...</p>
+                            <button class="member-role">CEO</button>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-icon">👤</div>
+                            <h3>Celina Thomas</h3>
+                            <p class="member-description">Celina Thomas is responsible for...</p>
+                            <button class="member-role">Team Lead</button>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-icon">👤</div>
+                            <h3>Mike Tysen</h3>
+                            <p class="member-description">Mike Tysen is responsible for...</p>
+                            <button class="member-role">Delivery Head</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-overlay">
+            <div class="contact-content">
+                <h1 class="contact-title">CONTACT US</h1>
+                <div class="contact-description">
+                    <p>Get in touch with us! We'd love to hear from you and help you plan your next adventure.</p>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="travel_recommendations.js"></script>
+</body>
+</html>

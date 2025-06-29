@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url('NYC.jpeg');
+    background-size: cover;
+    background-position: center top 60px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 80px; 
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #2c3e3f;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-search {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.nav-search input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    font-size: 0.9rem;
+    width: 250px;
+    background-color: #f8f9fa;
+}
+
+.nav-search input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.search-btn, .clear-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.search-btn {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.search-btn:hover {
+    background-color: #138496;
+}
+
+.clear-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.clear-btn:hover {
+    background-color: #218838;
+}
+
+
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    padding: 2rem;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-left: 2rem;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero-description {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 500px;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.book-btn {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #138496;
+}
+
+.social-links {
+    position: fixed;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.social-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    /* background-color: rgba(255,255,255,0.1); */
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+
+
+.about-section {
+    min-height: 100vh;
+    background-image: url('NYC.jpeg');
+    background-size: cover;
+    background-position: center top 60px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    /* padding: 80px 0; */
+}
+
+.about-overlay {
+    background: linear-gradient(135deg, rgba(44, 62, 63, 0.85) 0%, rgba(23, 162, 184, 0.75) 100%);
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    max-width: 1200px;
+    width: 100%;
+    color: white;
+}
+
+.about-title {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    border-left: 5px solid #17a2b8;
+    padding-left: 2rem;
+}
+
+.about-description {
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid rgba(23, 162, 184, 0.5);
+    margin-bottom: 4rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.about-description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.about-description p:last-child {
+    margin-bottom: 0;
+}
+
+.about-description strong {
+    color: #17a2b8;
+    font-weight: 600;
+}
+
+.team-section {
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid rgba(23, 162, 184, 0.5);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.team-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-align: left;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(23, 162, 184, 0.3);
+}
+
+.member-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background-color: rgba(23, 162, 184, 0.3);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.member-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: rgba(255,255,255,0.9);
+}
+
+.member-role {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.member-role:hover {
+    background-color: #138496;
+}
+
+
+
+.contact-section {
+    min-height: 100vh;
+    background-image: url('NYC.jpeg');
+    background-size: cover;
+    background-position: center top 60px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.contact-overlay {
+    background: linear-gradient(135deg, rgba(44, 62, 63, 0.85) 0%, rgba(23, 162, 184, 0.75) 100%);
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-content {
+    max-width: 800px;
+    width: 100%;
+    color: white;
+}
+
+.contact-title {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    border-left: 5px solid #17a2b8;
+    padding-left: 2rem;
+}
+
+.contact-description {
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid rgba(23, 162, 184, 0.5);
+    margin-bottom: 4rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.contact-description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+    margin: 0;
+}
+
+.contact-form-container {
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: 12px;
+    border: 2px solid rgba(23, 162, 184, 0.5);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 1rem 1.5rem;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #17a2b8;
+    box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.3);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #138496;
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
